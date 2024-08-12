@@ -1,0 +1,323 @@
+body{
+    box-sizing: border-box;
+    font-family: Mulish,"system-ui",-apple-system,BlinkMacSystemFont,Segoe UI,\ Roboto,Helvetica Neue,Arial,Noto Sans,"sans-serif",Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+a{
+    text-decoration: none;
+}
+
+li{
+
+    padding: 30px;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    padding-right: 160px;
+    font-size: 1.2em;
+
+
+}
+footer{
+    text-align: center;
+
+}
+#logo{
+width:50%;
+height:60%;
+position: absolute;
+background-image: radial-gradient( at top left,rgb(77, 77, 250)1%,white 70%);
+
+}
+
+main{
+    
+   width:100%;
+   
+   
+}
+
+section{
+  
+margin: 20px;
+display:flex ;
+flex-wrap: wrap;
+justify-content: center;
+color:rgb(7, 7, 82);
+
+}
+section h1{
+    max-width: 330px;
+    font-size: 3.5em;
+
+}
+section h2{
+    max-width: 100%;
+    font-size: 3.2em;
+}
+section h3{
+ 
+    font-size: 3.2em;
+}
+
+section article p{
+    max-width:80%;
+    font-size: 1.2em;
+ 
+  
+}
+
+section article{
+
+margin-bottom: 50px;
+
+
+}
+
+section article button{
+    width:200px;
+    height: 50px;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-color: rgb(7, 7, 82);
+    border: none;
+    border-radius:10px ;
+    color:rgb(255,255,255);
+    cursor: pointer;
+    }
+
+    section article button:hover{
+        background-color: rgb(101, 101, 144) ;
+    }
+
+section article img{
+width:90%;
+
+}
+
+
+
+#logo img{
+    margin: 50px 0px 0px 10%;
+}
+
+.imgrel {
+    position: relative;
+}
+
+.txtcenter{
+display: flex;
+justify-content: center;
+width:100%;
+text-align: center;
+
+}
+.clientes{
+display: block;
+background-color: rgb(213, 252, 239);
+width:300px;
+margin: 20px;
+margin-bottom:120px ;
+box-shadow: 2px 3px 5px 1px gray;
+border-radius: 20px;
+text-align: center;
+height: 650px;
+}
+
+
+.clientes img{
+    justify-content: center;
+    width:200px;
+    border-radius: 100px;
+    margin: 50px 40px 0px 50px;
+}
+.clientes h1{
+    width: 280px;
+    font-size: 2em;
+}
+.clientes p{
+  
+    width: 280px;
+    padding: 0px 0px 0px 10px;
+}
+.absolute{
+    position: absolute;
+}
+
+#model{
+text-align: center;
+margin: auto;
+position: fixed;
+width: 70%;
+border: 1px solid black;
+background-color: rgb(255,255,255);
+max-height: 400px;
+z-index: 1;
+left: 0;
+right: 0;
+top:10%;
+
+}
+#model span{
+    float: right;
+   font-size: 2em;
+    width: 40px;
+    color: white;
+    background-color: brown;
+    border: 2px solid brown;
+}
+#model p{
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 350px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+
+#bars svg{
+    width: 60px;
+    height: 60px;
+
+}
+
+#clientes_contacto{
+display: none;
+
+
+
+
+
+}
+
+#servicio-cerrar{
+     position: relative;
+     left: 130px;
+     top: 5px;
+    width: 30px;
+    background-color: brown;
+    color: rgb(255,255,255);
+    font-size: 2em;
+   
+   
+}
+
+/*
+
+:is(#bars[style="display: flex"]) {
+nav{
+    display:flex;
+    
+   }
+
+}
+Aqui otro metodo
+
+:matches(#bars)[style*="display: flex"] {
+   nav{display:flex} 
+Estilos que se aplicarán cuando el display sea flex 
+ 
+}
+
+*/
+
+@media (max-width:1200px)
+{
+
+    section h1, h2, h3{
+        max-width: 100%;
+        font-size: 3.5em;
+    
+    }
+    section article{
+
+        margin-bottom: 80px;
+   
+        
+        
+        }
+        #logo img{
+            margin: 50px 0px 0px 6%;
+        }
+
+        
+
+
+}
+
+   
+ @media   (max-width:700px) {
+    
+#bars {
+  display: flex;
+  position: relative;
+  left: 10px;
+  top: 10px; 
+  width: 20%;
+
+
+}
+
+#bars svg{
+    width:60px;
+    
+}
+
+#logo img  {
+    display: none;
+
+}
+nav{
+display: none;
+padding: 0px 10px 20px 20px;
+background-color: white; 
+margin-top: 20px; 
+height: 50px; 
+
+   
+}
+nav li{
+
+   width: 100%;
+   padding-top: 10px; 
+ 
+ 
+
+}
+
+
+}
+
+@media (max-width: 420px) {
+    nav {
+        display: none;
+      padding: 0px 230px 50px 0px;
+      background-color: white;
+      margin-top: 20px;
+      height: 150px;
+      width: 200px;
+    }
+    ul {
+        list-style-type: none;
+        display: block;
+        flex-direction: row;
+      
+      }
+  }
+
+
+
+
